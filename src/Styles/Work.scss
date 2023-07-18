@@ -1,0 +1,69 @@
+.work {
+    height: 100vh;
+    width: 100%;
+    
+    // border: 2px solid grey;
+    .heading {
+        margin-top: 10px;
+        text-align: center;
+        // border: 2px solid green;
+
+        h2 {
+            font: 700 2.5rem "Open Sans", sans-serif;
+            border-bottom: 1px solid rgba(237, 228, 228, 0.596);
+            padding: 0.5rem;
+            display: inline;
+        }
+    }
+
+    .projects {
+        // border: 2px solid grey;
+        height: 60vh;
+        width: 80%;
+        margin: auto;
+        margin-top: 20vh;
+        display: flex;
+
+        .caraosel {
+            margin: auto;
+            // border: 1px solid purple;
+            // width: 90%;
+            height: 60vh;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+
+            .image {
+                width: 30%;
+                // overflow: hidden;
+                display: flex;
+                justify-content: center;
+
+                >img {
+                    // height: 500px;
+                    object-fit: cover;
+                }
+            }
+
+            .info {
+                // border: 4px solid purple;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+                justify-content: center;
+                align-items: center;
+                >a {
+                    width: fit-content;
+                    background-color: #f26440;
+                    color: #fef2f2;
+                    padding: 1rem 2.5rem;
+                    border: none;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}

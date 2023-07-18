@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@0,400;0,900;1,900&display=swap');
+@import url(../Styles/navbar.scss);
+@import url(../Styles/Home.scss);
+@import url(../Styles/Work.scss);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #1C1F25;
+    color: whitesmoke;
+}
