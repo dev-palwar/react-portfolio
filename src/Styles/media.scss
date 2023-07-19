@@ -3,14 +3,15 @@
     .work .projects .caraosel {
         width: 100%;
     }
-    .work .projects .caraosel .info{
+
+    .work .projects .caraosel .info {
         // width: 100%;
         gap: 2rem;
     }
-    
+
 }
 
-@media screen and (max-width: 485px){
+@media screen and (max-width: 485px) {
     .work .projects {
         height: 36vh;
         overflow: hidden;
@@ -18,12 +19,15 @@
         flex-direction: column;
         justify-content: center;
     }
-    .work .projects .caraosel .image{
-        >img{
-            height: 20vh;
+
+    .work .projects .caraosel .image {
+        >img {
+            height: 40vh;
+            width: 66vh;
         }
     }
-    .work .projects .caraosel .info{
+
+    .work .projects .caraosel .info {
         // border: 2px solid greenyellow;
         font-size: 12px;
         width: fit-content;
@@ -32,8 +36,20 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        >a{
+
+        >a {
             padding: 10px;
         }
+    }
+
+    .skill-section {
+        height: 10vh;
+    }
+
+    .skill-section img {
+        display: none;
+    }
+    .contact-section .contact-images{
+        display: none;
     }
 }

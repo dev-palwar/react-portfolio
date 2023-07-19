@@ -1,0 +1,29 @@
+.skill-section {
+    // border: 2px solid;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .image {
+
+        img {
+            height: 45vh;
+        }
+    }
+
+    .skills-info {
+        // text-align: center;
+        // border: 2px solid;
+        padding: 20px;
+        height: 60vh;
+        width: 80vh;
+        
+        h1{
+            margin-bottom: 10%;
+            font-size: 50px;
+            // display: inline;
+            border-bottom: 2px solid purple;
+        }
+    }
+}

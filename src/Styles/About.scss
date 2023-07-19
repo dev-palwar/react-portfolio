@@ -1,0 +1,18 @@
+.about-section {
+    // border: 2px solid grey;
+    height: 60vh;
+
+    h1 {
+        display: inline;
+        border-bottom: 3px solid purple;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .text {
+        width: 310px;
+        letter-spacing: 1.3px;
+        padding: 29px 4px 0px 1px;
+        font-size: 21px;
+    }
+}
