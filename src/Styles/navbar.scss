@@ -1,29 +1,25 @@
 nav {
     position: relative;
-    height: 10vh;
+    width: 100%;
     z-index: 10;
 
     .header {
         position: fixed;
         background: #1C1F25;
-        margin-left: 3%;
-        // border: 2px solid grey;
         padding: 20px;
-        height: 10vh;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         justify-content: space-evenly;
         line-height: normal;
-        // border-bottom: 2px solid whitesmoke;
         
         .logo {
+            font-family: 'Cedarville Cursive', cursive;
             font-size: 2rem;
         }
         
         .menu {
-            // border: 2px solid grey;
             padding: 4px;
             display: flex;
             gap: 2rem;

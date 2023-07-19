@@ -1,0 +1,39 @@
+@media screen and (max-width: 722px) {
+
+    .work .projects .caraosel {
+        width: 100%;
+    }
+    .work .projects .caraosel .info{
+        // width: 100%;
+        gap: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 485px){
+    .work .projects {
+        height: 36vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .work .projects .caraosel .image{
+        >img{
+            height: 20vh;
+        }
+    }
+    .work .projects .caraosel .info{
+        // border: 2px solid greenyellow;
+        font-size: 12px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        >a{
+            padding: 10px;
+        }
+    }
+}
