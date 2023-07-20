@@ -1,24 +1,21 @@
 .contact-section {
-    // border: 2px solid grey;
     height: 90vh;
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
 
     .contact-form {
-        height: 90vh;
-        // width: 50%;
-        display: flex;   
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // border: 5px solid grey;
 
         .input-feilds {
             text-align: center;
+            display: flex;
+            flex-direction: column;
             padding: 0.8rem;
-            width: 40%;
-            outline: none;
             margin: 1rem;
-            border: none;
 
             h1 {
                 font-size: 40px;
@@ -27,7 +24,6 @@
             }
 
             input {
-                width: 318px;
                 padding: 12px 14px;
                 margin: 10px;
             }
@@ -38,19 +34,15 @@
                 color: #fff;
                 padding: 16px 138px 14px 139px;
                 font-size: 1rem;
-                margin: 3rem;
-                margin-left: 3rem;
+                margin: 9px;
                 border: none;
-                margin-left: 10px;
             }
         }
 
     }
 
     .contact-images {
-        // border: 2px solid pink;
         height: 90vh;
-        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;

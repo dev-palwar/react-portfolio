@@ -1,6 +1,6 @@
 import React from "react";
 import { SkillBar } from "react-skillbars";
-// import './Skills.css';
+import img from "../Assets/imgg-removebg-preview(3).png"
 
 const Skills = () => {
   const skills = [
@@ -30,9 +30,7 @@ const Skills = () => {
       <div className="skill-section" id="Skills">
         <div className="image">
           <img
-            src={
-              "https://o.remove.bg/downloads/b8b1b00b-9f47-4fa4-ad95-f8f796f10d50/imgg-removebg-preview.png"
-            }
+            src={img}
             alt=""
           />
         </div>

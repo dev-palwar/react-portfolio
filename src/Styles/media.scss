@@ -5,7 +5,6 @@
     }
 
     .work .projects .caraosel .info {
-        // width: 100%;
         gap: 2rem;
     }
 
@@ -22,13 +21,11 @@
 
     .work .projects .caraosel .image {
         >img {
-            height: 40vh;
-            width: 66vh;
+            height: 20vh;
         }
     }
 
     .work .projects .caraosel .info {
-        // border: 2px solid greenyellow;
         font-size: 12px;
         width: fit-content;
         display: flex;
@@ -49,7 +46,8 @@
     .skill-section img {
         display: none;
     }
-    .contact-section .contact-images{
+
+    .contact-section .contact-images {
         display: none;
     }
 }

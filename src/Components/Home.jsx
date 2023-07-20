@@ -5,15 +5,15 @@ import About from "./About";
 
 const Home = () => {
   const [visible, setVisible] = useState(true);
-  const [btnName, setBtnName] = useState('About me')
+  const [btnName, setBtnName] = useState("About me");
 
   const handler = () => {
-    if(visible===false){
-      setVisible(true)
-      setBtnName('About me')
+    if (visible === false) {
+      setVisible(true);
+      setBtnName("About me");
     } else {
       setVisible(false);
-      setBtnName('')
+      setBtnName("");
     }
   };
 
@@ -60,7 +60,9 @@ const Home = () => {
 
           <div className="buttons">
             <button onClick={handler}>{btnName}</button>
-            <button>Projects</button>
+            <a href="https://github.com/dev-palwar">
+              <button><i class="fa-brands fa-github"></i>Projects</button>
+            </a>
           </div>
         </div>
         <div className="profileImage">
