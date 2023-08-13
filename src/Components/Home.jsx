@@ -1,22 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
-import About from "./About";
 
 const Home = () => {
-  const [visible, setVisible] = useState(true);
-  const [btnName, setBtnName] = useState("About me");
-
-  const handler = () => {
-    if (visible === false) {
-      setVisible(true);
-      setBtnName("About me");
-    } else {
-      setVisible(false);
-      setBtnName("");
-    }
-  };
-
   const animations = {
     h2: {
       initial: {
@@ -32,36 +18,32 @@ const Home = () => {
 
   return (
     <>
-      <section id="Home">
+      <section id="Home" className="home">
         <div className="profileInfo">
-          {visible === true ? (
-            <>
-              <motion.div {...animations.h2} className="description">
-                <h2>
-                  Hi, I Am <br /> Dev Palwar
-                </h2>
-              </motion.div>
+          <motion.div {...animations.h2} className="description">
+            <h2>
+              Hi, I Am <br /> Dev Palwar
+            </h2>
+          </motion.div>
 
-              <div className="typer">
-                <Typewriter
-                  options={{
-                    strings: ["A Developer", "A Designer", "A Creator"],
-                    autoStart: true,
-                    loop: true,
-                    cursor: "",
-                    wrapperClassName: "typewriterpara",
-                  }}
-                />
-              </div>
-            </>
-          ) : (
-            <About />
-          )}
+          <div className="typer">
+            <Typewriter
+              options={{
+                strings: ["A Developer", "A Designer", "A Creator"],
+                autoStart: true,
+                loop: true,
+                cursor: "",
+                wrapperClassName: "typewriterpara",
+              }}
+            />
+          </div>
 
           <div className="buttons">
-            <button onClick={handler}>{btnName}</button>
+            <button>About me</button>
             <a href="https://github.com/dev-palwar">
-              <button><i class="fa-brands fa-github"></i>Projects</button>
+              <button>
+                <i class="fa-brands fa-github"></i>Projects
+              </button>
             </a>
           </div>
         </div>

@@ -2,7 +2,9 @@ nav {
     position: relative;
     width: 100%;
     z-index: 10;
-
+    height: 10vh;
+    margin-bottom: 20px;
+    
     .header {
         position: fixed;
         background: #1C1F25;
@@ -27,32 +29,33 @@ nav {
         
         a {
             text-decoration: none;
-            padding: 5px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            transition: all 0.2s;
-            color: whitesmoke;
-        }
-
-        button {
-            border: 1px solid rgba(22, 22, 22, 0.5960784314);
-            padding: 0.5rem 2rem;
-            background-color: #fef2f2;
-            cursor: pointer;
-            color: #161616;
-            letter-spacing: 1px;
-            font-weight: 500;
-            transition: all 0.3s;
-            cursor: pointer;
-        }
+        padding: 5px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all 0.2s;
+        color: whitesmoke;
         
-        button:hover {
-            color: whitesmoke;
-            background: #1C1F25;
-        }
-        
-        a:hover {
+        &:hover {
             color: red;
         }
     }
+    
+    button {
+        border: 1px solid rgba(22, 22, 22, 0.5960784314);
+        padding: 0.5rem 2rem;
+        background-color: #fef2f2;
+        cursor: pointer;
+        color: #161616;
+        letter-spacing: 1px;
+        font-weight: 500;
+        transition: all 0.3s;
+        cursor: pointer;
+        
+        &:hover {
+            color: whitesmoke;
+            background: #1C1F25;
+        }
+    }
+}
+
 }
