@@ -1,53 +1,73 @@
-@media screen and (max-width: 722px) {
-
-    .work .projects .caraosel {
-        width: 100%;
+@media screen and (max-width: '1000px') {
+    nav {
+        display: none;
     }
 
-    .work .projects .caraosel .info {
-        gap: 2rem;
-    }
-
-}
-
-@media screen and (max-width: 485px) {
-    .work .projects {
-        height: 36vh;
-        overflow: hidden;
-        display: flex;
+    .home {
         flex-direction: column;
-        justify-content: center;
-    }
+        height: 100vh;
 
-    .work .projects .caraosel .image {
-        >img {
-            height: 20vh;
+        .profileInfo {
+            order: 1;
+            h2 {
+                font-size: 7vh;
+            }
+
+        }
+
+        .profileImage {
+            display: flex;
+            justify-content: center;
+
+            img {
+                text-align: center;
+                height: 80vw;
+            }
+        }
+
+        .profileInfo {
+            .description {
+                text-align: center;
+            }
+
+            .typer {
+                text-align: center;
+            }
+        }
+        .buttons{
+            justify-content: center;
         }
     }
 
-    .work .projects .caraosel .info {
-        font-size: 12px;
-        width: fit-content;
-        display: flex;
+    .projects>div {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        gap: 1rem;
 
-        >a {
-            padding: 10px;
+        >h1 {
+            border: none;
+            font-size: 13vw;
+            margin-top: 10px;
         }
     }
 
-    .skill-section {
-        height: 10vh;
+    #Skills {
+        padding: 20px;
+
+        .icons {
+            row-gap: 30%;
+
+            img {
+                height: 50%;
+            }
+        }
     }
 
-    .skill-section img {
-        display: none;
-    }
 
-    .contact-section .contact-images {
-        display: none;
+    #contact {
+        grid-template-columns: 1fr;
+
+        aside {
+            display: none;
+        }
     }
 }

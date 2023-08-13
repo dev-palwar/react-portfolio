@@ -1,41 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import img from "../Assets/pic4.png";
 const Contact = () => {
   
-    const animations = {
-    h2: {
+  const animations = {
+    form: {
       initial: {
-        // x: "-100%",
-        scale: 0,
+        x: "-100%",
         opacity: 0,
       },
       whileInView: {
-        // x: 0,
-        scale: 1,
+        x: 0,
         opacity: 1,
       },
     },
-  };
 
+    button: {
+      initial: {
+        y: "-100%",
+        opacity: 0,
+      },
+      whileInView: {
+        y: 0,
+        opacity: 1,
+      },
+      transition: {
+        delay: 0.5,
+      },
+    },
+  };
   return (
-    <>
-      <div className="contact-section" id="Contact">
-        <div className="contact-form">
-          <div className="input-feilds">
-            <h1>Contact me</h1>
-            <input type="text" name="" id="" placeholder="Name" />
-            <input type="email" name="" id="" placeholder="Email" />
-            <input type="text" name="" id="" placeholder="Message" />
-            <button type="button">SEND</button>
-          </div>
-        </div>
-        <motion.div className="contact-images" {...animations.h2}>
-          <img src={img} alt="" />
-        </motion.div>
-      </div>
-    </>
+    <div id="contact">
+      <section>
+        <motion.form {...animations.form}>
+          <h2>Contact Me</h2>
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Your Message"
+            required
+          />
+
+          <motion.button
+            {...animations.button}
+            type="submit"
+          >
+            Send
+          </motion.button>
+        </motion.form>
+      </section>
+      <aside>
+        <img src="https://raw.githubusercontent.com/meabhisingh/react-portfolio/master/src/assets/vg.png" alt="Graphics" />
+      </aside>
+    </div>
   );
 };
 
